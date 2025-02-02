@@ -206,7 +206,7 @@ def main():
     fig, ax, trajectory = initialize_plot()
     kf = KalmanFilter(dt=1, process_noise=1e-5, measurement_noise=1e-1)
 
-    video_path = "input.avi"
+    video_path = "../../../input.avi"
     cap = cv2.VideoCapture(video_path)
 
     x_positions = []
